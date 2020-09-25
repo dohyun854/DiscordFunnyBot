@@ -280,4 +280,4 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 
-client.run("NzQ4NzMxOTM3MDgxNzg2NDU5.X0hs9A.53CBYIdqyOjzu0S1U8xm7r2QCHA")
+client.run("BOT_TOKEN")
