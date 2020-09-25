@@ -1,6 +1,7 @@
 import discord
 import configparser
 import asyncio
+import os
 
 
 client = discord.Client()
@@ -279,5 +280,5 @@ async def on_message(message):
         embed.set_footer(text="Yo, this time real Nitro")
         await message.channel.send(embed=embed)
 
-
-client.run("BOT_TOKEN")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
