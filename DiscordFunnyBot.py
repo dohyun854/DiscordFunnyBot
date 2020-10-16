@@ -18,7 +18,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith("p!help"):
-        embed = discord.Embed(title="Funny Discord Bot", description="made by Codeman#0001", color=0xadfffe)
+        embed = discord.Embed(title="Funny Discord Bot", description="made by Dohyun Kim", color=0xadfffe)
         embed.set_author(name="Bot Commands")
         embed.set_thumbnail(
             url="https://theme.zdassets.com/theme_assets/678183/af1a442f9a25a27837f17805b1c0cfa4d1725f90.png")
@@ -40,14 +40,14 @@ async def on_message(message):
     if message.content.startswith("p!info"):
         embed = discord.Embed(title="Funny Bot#3396", color=0x99ffe6)
         embed.set_author(name="Information")
-        embed.add_field(name="Developer", value="Codeman#0001", inline=True)
-        embed.add_field(name="Logo Creator", value="Codeman#0001", inline=True)
+        embed.add_field(name="Developer", value="Dohyun Kim", inline=True)
+        embed.add_field(name="Logo Creator", value="Dohyun Kim", inline=True)
         embed.add_field(name="Creation Date", value="August 28 2020", inline=True)
         embed.add_field(name="Prefix", value="`p!`", inline=True)
         embed.add_field(name="Bot Commands", value="`p!help` for bot commands.", inline=True)
         embed.add_field(name="Donate", value="`p!donate` to donate", inline=True)
         embed.add_field(name="Invite", value="`p!invite` to invite me!", inline=True)
-        embed.add_field(name="Image Source", value="Codeman#0001, Google, Pixabay, and Discord", inline=True)
+        embed.add_field(name="Image Source", value="Dohyun Kim, Google, Pixabay, and Discord", inline=True)
         await message.channel.send(embed=embed)
 
     if message.content.startswith("p!invite"):
@@ -59,7 +59,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content.startswith("p!support"):
-        embed = discord.Embed(title="DM Codeman#0001 to get support", color=0x8095ff)
+        embed = discord.Embed(title="Join this server: https://discord.gg/xbn8hzM", color=0x8095ff)
         embed.set_author(name="Get Bot Support")
         embed.set_thumbnail(url="https://blogfiles.pstatic.net/MjAyMDA4MjhfMjM4/MDAxNTk4NTg1MTcwNDU3.tw9dy7KDcWJ02-g50DeSeGN57JCS5zoxmVhuxT2bWSkg.ibbzJQ2xtgOQ3_EuUGI3gP3poeDHbFHzbNIVF_Td6Mog.JPEG.dohyun854/8biticon_512.jpg?type=w1")
         embed.set_footer(text="No spam DMing!!")
@@ -280,5 +280,5 @@ async def on_message(message):
         embed.set_footer(text="Yo, this time real Nitro")
         await message.channel.send(embed=embed)
 
-access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
+access_token = os.environ["BOT_TOKEN"]
